@@ -21,5 +21,8 @@ Metodo construtor em python: __
 ex:
 class NomeClasse:
 def __init__(self):
+
+* self - é uma referência ao próprio objeto dentro da classe.
+ Quando você cria uma função dentro de uma classe, ela precisa saber qual objeto ela pertence e é ai que entra o self
 *
 """
