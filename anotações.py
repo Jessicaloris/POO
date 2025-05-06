@@ -1,5 +1,5 @@
 """
-conceitos de poo:
+conceitos de POO:
 
 * atribuição - São as características de um objeto. Ficam dentro da classe e variam de objeto para objeto.
 * métodos - São as ações que o objeto pode fazer. Também ficam dentro da classe.
@@ -12,17 +12,39 @@ conceitos de poo:
 * polimorfismo - Permite que métodos com o mesmo nome façam coisas diferentes dependendo da classe. superclasse|subclasse
 
 * Classes - Uma classe define:
-Quais *atributos* os objetos terão (ex: nome, cor, idade).
-Quais *métodos* os objetos poderão executar (ex: andar, falar, buzinar).
+Quais atributos os objetos terão (ex: nome, cor, idade).
+Quais métodos os objetos poderão executar (ex: andar, falar, buzinar).
 Pense na classe como o projeto de uma casa. Você pode usar esse projeto para construir várias casas (objetos),
 cada uma com suas cores e móveis (atributos diferentes), mas todas baseadas no mesmo plano.
-Padrão de nomenclatura: Pascal Case - toda primeira letra da cada palavra é sempre maiuscula.
-Metodo construtor em python: __
+
+* Padrão de nomenclatura: Pascal Case - toda primeira letra da cada palavra é sempre maiuscula sem espaços ou sublinhados.
 ex:
-class NomeClasse:
-def __init__(self):
+MinhaClasse
+NomeDoArquivo
+PessoaFisica
+
+
+* Metodo construtor em python: __init__
+ex de sintaxe básica:
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+
 
 * self - é uma referência ao próprio objeto dentro da classe.
- Quando você cria uma função dentro de uma classe, ela precisa saber qual objeto ela pertence e é ai que entra o self
+Quando você cria uma função dentro de uma classe, ela precisa saber qual objeto ela pertence e é ai que entra o self.
+ex:
+class Pessoa:
+    def __init__(self, nome):
+        self.nome = nome  # 'self.nome' é o atributo da instância
+
+    def dizer_ola(self):
+        print(f"Olá, meu nome é {self.nome}")
+explicação:
+self.nome = nome: associa o valor do argumento nome ao atributo nome da instância.
+self.nome: acessa esse valor depois dentro da classe.
+Quando você cria uma instância (p = Pessoa("Ana")) e chama p.dizer_ola(), o self automaticamente se refere ao objeto p.
+
 *
 """
