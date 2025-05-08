@@ -46,5 +46,8 @@ self.nome = nome: associa o valor do argumento nome ao atributo nome da instânc
 self.nome: acessa esse valor depois dentro da classe.
 Quando você cria uma instância (p = Pessoa("Ana")) e chama p.dizer_ola(), o self automaticamente se refere ao objeto p.
 
-*
+*exercicio 02nj:
+  Crie uma classe que tenha os atributos, número da conta, saldo, status da conta (se ela está ativa ou não), nome do cliente
+    depositar, sacar verificar saldo e possibilidade de ativar a conta ou desativar a conta. Para desativar uma conta, é necessário
+    que o saldo esteja zerado.
 """
