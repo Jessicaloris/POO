@@ -8,8 +8,8 @@ conceitos de POO:
 * classe - É o molde para criar objetos. Define quais atributos (dados) e métodos (ações) o objeto terá.
 * abstração - É esconder detalhes complexos e mostrar só o necessário para quem usa o objeto.
 * encapsulamento - É o conceito de esconder os detalhes internos do objeto e só permitir o acesso necessário. Protege os dados.
-* herança - Permite que uma classe herde características e comportamentos de outra.
-* polimorfismo - Permite que métodos com o mesmo nome façam coisas diferentes dependendo da classe. superclasse|subclasse
+* herança - Permite que uma classe herde características e comportamentos de outra. superclasse|subclasse
+* polimorfismo - Permite que métodos com o mesmo nome façam coisas diferentes dependendo da classe.
 
 * Classes - Uma classe define:
 Quais atributos os objetos terão (ex: nome, cor, idade).

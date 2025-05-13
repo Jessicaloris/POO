@@ -1,4 +1,4 @@
-"""class Pessoa():
+class Pessoa():
     def __init__(self, nome, idade, peso):
         self.nome = nome
         self.idade = idade
@@ -35,7 +35,7 @@
             self.dormindo = False
             print("Acordou o mizeravel")
         else:
-            print()"""
+            print()
 
 class ContaBancaria:
     def __init__(self, numero_conta, nome_cliente):
@@ -84,3 +84,109 @@ class ContaBancaria:
                 print("Não é possível desativar a conta com saldo diferente de zero.")
         else:
             print("A conta já está inativa.")
+
+class Animal():
+    def __init__(self, nome, cor):
+        self.nome = nome
+        self.cor = cor
+    def comer(self):
+        print(f"O {self.nome} foi comer...") 
+
+class Gato(Animal):
+    def __init__(self, nome, cor):
+        super().__init__(nome, cor)
+    def miar(self):
+        print(f"{self.nome} está miando...")
+        
+class Cachorro(Animal):
+    def __init__(self, nome, cor):
+        super().__init__(nome, cor)
+    def latir(self):
+        print(f"{self.nome} está latindo...")
+        
+class Vaca(Animal):
+    def __init__(self,nome, cor):
+        super().__init__(nome, cor)
+    def mugir(self):
+        print(f"{self.nome} está mugindo..")
+        
+class Coelho(Animal):
+    def __init__(self, nome, cor):
+        super(). __init__(nome, cor)
+    def grunir (self):
+        print(f" O {self.nome} está grunindo, iii... iii...")
+
+class Ingresso():
+    def __init__(self, valor):
+        self.valor = valor
+    def imprimirvalor(self):
+        print(f"O valor do seu ingresso é {self.valor}.")
+
+class Vip(Ingresso):
+    def __init__(self, valor):
+        super().__init__(valor)
+        self.valor *= 1.5
+    def imprimirvalor(self):
+        print(f"Seu ingresso VIP custpu {self.valor}")
+
+class Forma():
+    def __init__(self):
+        self.area = 0
+        self.perimetro = 0
+
+class Retangulo(Forma):
+    def __init__(self):
+        super().__init__()
+
+    def CalArea (self,base,altura):
+        self.area = base * altura
+        print(self.area)
+
+    def CalPerimetro(self,base,altura):
+        self.perimetro = (base + altura) *2
+
+class Triangulo(Forma):
+
+    def __init__(self):
+        super().__init__()
+    def Calarea (self,base,altura):
+        self.area = (base + altura) /2
+        print(self.area)
+    def CalPerimetro(self,base,altura):
+        self.perimetro = (base + altura)
+        print(self.perimetro)
+
+class Atleta:
+    def __init__(self):
+        self.aposentado = False
+        self.peso = 0
+        self.aquecer = False
+
+    def aposentar(self):
+        self.aposentado = True
+
+    def aquecer (self):
+        self.aquecer = True
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
